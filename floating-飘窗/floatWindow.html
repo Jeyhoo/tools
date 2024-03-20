@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>中央团校-人才招聘</title>
+		<link rel="stylesheet" href="./css/basic.css">
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+
+	<body class="page-index">
+		<header>
+			<div class="logo_wrapper">
+				<a href="./index.html" class="logo">
+					<img src="./images/logo.png" alt="logo">
+				</a>
+				<a href="./index.html" class="logo">
+					<img src="./images/logo_secondary.png" alt="logo">
+				</a>
+			</div>
+			<div class="navbar_wrapper">
+				<div class="navbar_left_title">人才招聘</div>
+				<div class="navbar_right">
+					<a href="./login.html" class="register">注册登录</a>
+				</div>
+			</div>
+		</header>
+
+		<section>
+
+            <!-- 飘窗 -->
+			<div class="floating" id="floating">
+                <button></button>
+                <span>2024 RUC International Summer School</span>
+                <a href="#">Register Now</a>
+            </div>
+		</section>
+
+		<footer>
+			<div>
+				<span>电话：(010)68420802</span>
+				<span>传真：(010)88568036</span>
+				<span>邮编：100089</span>
+				<span>地址：北京市海淀区西三环北路25号</span>
+			</div>
+			<div class="filings">
+				<span>版权所有 &copy; 中央团校</span>
+				<span>京ICP备05004633号-2</span>
+				<span>京公网安备 110402430028 号</span>
+			</div>
+		</footer>
+
+		<script src="./js/jquery-3.4.1.min.js"></script>
+		<script src="./js/common.js"></script>
+	</body>
+
+    <!-- 引入飘窗js依赖 -->
+    <script src="./js/floatWindow.js"></script>
+    <script>
+        // 绑定一个div，赋予其飘窗的运动模式
+        const floating = new Floating({
+            el:document.getElementById("floating"),// 飘窗元素id
+            style:{},// 支持修改飘窗css样式
+        });
+    </script>
+</html>
